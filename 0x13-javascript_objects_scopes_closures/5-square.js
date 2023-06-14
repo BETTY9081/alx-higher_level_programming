@@ -1,3 +1,10 @@
 #!/usr/bin/node
-const num = Math.floor(Number(process.argv[2]));
-console.log(isNaN(num) ? 'Not a number' : `My number: ${num}`);
+const Rectangle = require('./4-rectangle');
+
+class Square extends Rectangle {
+  constructor (size) {
+    super(size, size);
+  }
+}
+
+module.exports = Square;
